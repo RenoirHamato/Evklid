@@ -1,0 +1,217 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat-Regular'),
+    url('../fonts/MontserratRegular.woff2') format('woff2'),
+    url('../fonts/MontserratRegular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat-SemiBold'),
+    url('../fonts/MontserratSemiBold.woff2') format('woff2'),
+    url('../fonts/MontserratSemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat-Bold'),
+    url('../fonts/MontserratBold.woff2') format('woff2'),
+    url('../fonts/MontserratBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat-ExtraBold'),
+    url('../fonts/MontserratExtraBold.woff2') format('woff2'),
+    url('../fonts/MontserratExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 400;
+}
+
+/* glob */
+
+.container {
+    max-width: 1800px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.button-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button {
+    padding: 25px 39px;
+    width: 280px;
+    font-family: 'Montserrat';
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #fff;
+    background-color: #f90;
+    border: none;
+    border-radius: 16px;
+}
+
+.section-title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58px;
+    color: #000;
+}
+
+.section-description {
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #000;
+}
+
+/* header */
+.header__box {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 14px 0;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.header__box .header__link {
+    margin-right: 553px;
+}
+
+.header__list {
+    margin-right: 260px;
+}
+
+.header__list .list__item {
+    margin-right: 85px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+}
+
+.header__list .list__item:last-child {
+    margin-right: 0;
+}
+
+/* preview */
+.main__box {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.main__container .box {
+    position: relative;
+    width: 100%;
+    min-height: 620px;
+    padding: 100px 80px;
+    border-radius: 32px;
+}
+
+.main__container .box__box {
+    margin: 0;
+    width: 837px;
+    min-height: 420px;
+}
+
+.main__container .box__title {
+    margin: 0;
+    margin-bottom: 24px;
+    min-height: 170px;
+    font-family: 'Montserrat';
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 85px;
+    color: #fff;
+}
+
+.main__container .box__text {
+    margin: 0;
+    margin-bottom: 90px;
+    width: 100%;
+    min-height: 58px;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #fff;
+}
+
+.box__box .list-marker {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.box__box .list-marker__item-marker {
+    margin: 0;
+    margin-right: 20px;
+    padding-bottom: 30px;
+    width: 15px;
+    height: 45px;
+}
+
+.box__box .list-marker__item-marker:last-child {
+    margin-right: 0;
+}
